@@ -1,0 +1,341 @@
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#111;
+    color:white;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header{
+    background:#1b1b1b;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.5);
+}
+
+header h1{
+    color:#f5c518;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+header input{
+    width:60%;
+    max-width:500px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+/* ========================= */
+/* BOTONES */
+/* ========================= */
+
+.categorias{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:30px;
+}
+
+.categorias button{
+
+    background:#f5c518;
+    color:#000;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.categorias button:hover{
+
+    background:#fff;
+    transform:scale(1.05);
+
+}
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+#contenedorPeliculas{
+
+    width:90%;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+}
+
+/* ========================= */
+/* TARJETAS */
+/* ========================= */
+
+.tarjeta{
+
+    background:#1d1d1d;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 12px rgba(0,0,0,.5);
+
+    transition:.3s;
+
+}
+
+.tarjeta:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.tarjeta img{
+
+    width:100%;
+    height:340px;
+
+    object-fit:cover;
+
+}
+
+.tarjeta h2{
+
+    padding:15px 15px 5px;
+
+    font-size:22px;
+
+}
+
+.tarjeta p{
+
+    padding:5px 15px;
+
+    color:#ddd;
+
+}
+
+.tarjeta button{
+
+    width:90%;
+
+    margin:15px;
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#f5c518;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.tarjeta button:hover{
+
+    background:white;
+
+}
+
+/* ========================= */
+/* MOSTRAR MÁS */
+/* ========================= */
+
+.mostrar{
+
+    text-align:center;
+
+    margin:40px;
+
+}
+
+#btnMostrar{
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#f5c518;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#btnMostrar:hover{
+
+    background:white;
+
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+
+    background:#1b1b1b;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:768px){
+
+    header h1{
+
+        font-size:30px;
+
+    }
+
+    header input{
+
+        width:90%;
+
+    }
+
+}
+/*==========================
+MODAL
+==========================*/
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.8);
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.contenidoModal{
+
+    background:#1b1b1b;
+
+    width:400px;
+
+    max-width:90%;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+.contenidoModal img{
+
+    width:220px;
+
+    border-radius:10px;
+
+    margin-bottom:15px;
+
+}
+
+#cerrarModal{
+
+    position:absolute;
+
+    top:10px;
+
+    right:20px;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+.herramientas{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+#ordenar{
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+}
+
+#contador{
+
+    font-weight:bold;
+
+    color:#f5c518;
+
+}

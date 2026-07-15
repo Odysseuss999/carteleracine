@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de Cine</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+<header>
+
+    <h1>🎬 Cartelera de Cine</h1>
+
+    <input type="text"
+           id="buscar"
+           placeholder="Buscar película...">
+
+    <div class="herramientas">
+
+        <select id="ordenar">
+
+            <option value="">Ordenar...</option>
+
+            <option value="az">Nombre A-Z</option>
+
+            <option value="za">Nombre Z-A</option>
+
+            <option value="nuevo">Más recientes</option>
+
+            <option value="viejo">Más antiguas</option>
+
+        </select>
+
+        <p id="contador"></p>
+
+    </div>
+
+    </header>
+
+
+    <!-- CATEGORÍAS -->
+
+    <section class="categorias">
+
+        <button data-genero="Todas">Todas</button>
+
+        <button data-genero="Acción">Acción</button>
+
+        <button data-genero="Ciencia ficción">Ciencia ficción</button>
+
+        <button data-genero="Animación">Animación</button>
+
+        <button data-genero="Terror">Terror</button>
+
+        <button data-genero="Comedia">Comedia</button>
+
+        <button data-genero="Drama">Drama</button>
+
+    </section>
+
+
+    <!-- CONTENEDOR DE PELÍCULAS -->
+
+    <main id="contenedorPeliculas">
+
+    </main>
+
+
+    <!-- BOTÓN MOSTRAR MÁS -->
+
+    <section class="mostrar">
+
+        <button id="btnMostrar">
+            Mostrar más
+        </button>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            Proyecto Universitario - Programación Lógica Funcional
+        </p>
+
+    </footer>
+    <!-- MODAL -->
+
+    <div id="modal" class="modal">
+
+        <div class="contenidoModal">
+
+            <span id="cerrarModal">&times;</span>
+
+            <img id="modalImagen">
+
+            <h2 id="modalTitulo"></h2>
+
+            <p id="modalGenero"></p>
+
+            <p id="modalDuracion"></p>
+
+            <p id="modalClasificacion"></p>
+
+            <p id="modalEstreno"></p>
+
+            <p id="modalSinopsis"></p>
+
+        </div>
+
+    </div>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
